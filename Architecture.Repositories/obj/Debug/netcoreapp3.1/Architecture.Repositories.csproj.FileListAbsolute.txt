@@ -1,0 +1,12 @@
+C:\Projects\My Project\ASP.NET MVC_Architecture Samples\ASP.NET MVC Web Architecture\Architecture.Web\Architecture.Repositories\bin\Debug\netcoreapp3.1\Architecture.Core.dll
+C:\Projects\My Project\ASP.NET MVC_Architecture Samples\ASP.NET MVC Web Architecture\Architecture.Web\Architecture.Repositories\obj\Debug\netcoreapp3.1\Architecture.Repositories.csprojAssemblyReference.cache
+C:\Projects\My Project\ASP.NET MVC_Architecture Samples\ASP.NET MVC Web Architecture\Architecture.Web\Architecture.Repositories\obj\Debug\netcoreapp3.1\Architecture.Repositories.AssemblyInfoInputs.cache
+C:\Projects\My Project\ASP.NET MVC_Architecture Samples\ASP.NET MVC Web Architecture\Architecture.Web\Architecture.Repositories\obj\Debug\netcoreapp3.1\Architecture.Repositories.AssemblyInfo.cs
+C:\Projects\My Project\ASP.NET MVC_Architecture Samples\ASP.NET MVC Web Architecture\Architecture.Web\Architecture.Repositories\bin\Debug\netcoreapp3.1\Architecture.Repositories.deps.json
+C:\Projects\My Project\ASP.NET MVC_Architecture Samples\ASP.NET MVC Web Architecture\Architecture.Web\Architecture.Repositories\bin\Debug\netcoreapp3.1\Architecture.Repositories.dll
+C:\Projects\My Project\ASP.NET MVC_Architecture Samples\ASP.NET MVC Web Architecture\Architecture.Web\Architecture.Repositories\bin\Debug\netcoreapp3.1\Architecture.Repositories.pdb
+C:\Projects\My Project\ASP.NET MVC_Architecture Samples\ASP.NET MVC Web Architecture\Architecture.Web\Architecture.Repositories\bin\Debug\netcoreapp3.1\Architecture.Core.pdb
+C:\Projects\My Project\ASP.NET MVC_Architecture Samples\ASP.NET MVC Web Architecture\Architecture.Web\Architecture.Repositories\obj\Debug\netcoreapp3.1\Architecture.Repositories.csproj.CoreCompileInputs.cache
+C:\Projects\My Project\ASP.NET MVC_Architecture Samples\ASP.NET MVC Web Architecture\Architecture.Web\Architecture.Repositories\obj\Debug\netcoreapp3.1\Architecture.Repositories.csproj.CopyComplete
+C:\Projects\My Project\ASP.NET MVC_Architecture Samples\ASP.NET MVC Web Architecture\Architecture.Web\Architecture.Repositories\obj\Debug\netcoreapp3.1\Architecture.Repositories.dll
+C:\Projects\My Project\ASP.NET MVC_Architecture Samples\ASP.NET MVC Web Architecture\Architecture.Web\Architecture.Repositories\obj\Debug\netcoreapp3.1\Architecture.Repositories.pdb

@@ -1,0 +1,144 @@
+﻿@model Tuple<System.Data.DataTable, int>
+@{
+
+    var rowCount = 1;
+    var idIndex = 0;
+    var tableStyle = "";
+    @if (Model.Item1.Rows.Count > 10)
+    {
+        tableStyle = "height: 600px;overflow: scroll;";
+    }
+
+}
+<style>
+    .static-data-header {
+        font-family: 'Gill Sans MT';
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        background-color: skyblue;
+        color: #fff;
+    }
+</style>
+@if (Model != null)
+{
+    <div class="table-responsive" id="tableForData" style="@tableStyle">
+        <table class="table table-bordered">
+            <thead>
+                @if (Model.Item1.Columns.Count != 0)
+                {
+                    <tr>
+                        <th scope="col" class="static-data-header" style="">#</th>
+                        @foreach (System.Data.DataColumn item in Model.Item1.Columns)
+                        {
+                            if (item.ColumnName.ToLower() != "id")
+                            {
+                                <th scope="col" class="static-data-header" style="">@item.ColumnName</th>
+                            }
+                            else
+                            {
+                                <th scope="col" class="static-data-header" style="">Action</th>
+                                idIndex = Model.Item1.Columns[item.ColumnName].Ordinal;
+                            }
+                        }
+                    </tr>
+                }
+
+            </thead>
+            @if (Model.Item1.Rows.Count != 0)
+            {
+                <tbody>
+                    @foreach (System.Data.DataRow row in Model.Item1.Rows)
+                    {
+                        <tr>
+                            <th scope="row">@rowCount</th>
+                            @for (var i = 0; i < row.ItemArray.Count(); i++)
+                            {
+                                if (idIndex == 0 || i != idIndex)
+                                {
+                                    <td>@row.ItemArray[i]</td>
+                                }
+                                else
+                                {
+                                    <td>
+                                        <input type="button" data-id="@row.ItemArray[i]" data-toggle="modal" data-target="#exampleModal" onclick="GetRecordById(this)" value="Edit" />
+                                        <input type="button" data-id="@row.ItemArray[i]" data-toggle="modal" data-target="#deleteDataModal" onclick="DeleteRecordById(this)" value="Delete" />
+                                    </td>
+                                }
+                            }
+                            @{rowCount++;}
+                        </tr>
+                    }
+                    @if (Model.Item2 > 100)
+                    {
+                        <tr>
+                            <th scope="row" style="text-align:center" colspan="@(Model.Item1.Columns.Count == 0 ? 1 : Model.Item1.Columns.Count+1)">You have more than 100 Record(Total @Model.Item2 Records).Please download to get all the records.</th>
+                        </tr>
+                    }
+                </tbody>
+            }
+            else
+            {
+                <tbody>
+                    <tr>
+                        <th scope="row" style="text-align:center" colspan="@(Model.Item1.Columns.Count == 0 ? 1 : Model.Item1.Columns.Count+1)">No Data Found</th>
+                    </tr>
+                </tbody>
+            }
+        </table>
+    </div>
+}
+else
+{
+    <div class="table-responsive" style="height: 600px; overflow: scroll;">
+
+        <table class="table table-bordered">
+            <thead>
+                @if (Model.Item1.Columns.Count != 0)
+                {
+                    <tr>
+                        <th scope="col" class="static-data-header" style="">#</th>
+                        @foreach (System.Data.DataColumn item in Model.Item1.Columns)
+                        {
+                            if (item.ColumnName.ToLower() != "id")
+                            {
+                                <th scope="col" class="static-data-header" style="">@item.ColumnName</th>
+                            }
+                        }
+                    </tr>
+                }
+
+            </thead>
+            @if (Model.Item1.Rows.Count != 0)
+            {
+                <tbody>
+                    @foreach (System.Data.DataRow row in Model.Item1.Rows)
+                    {
+                        <tr>
+                            <th scope="row">@rowCount</th>
+                            @foreach (var item in row.ItemArray)
+                            {
+                                <td>@item</td>
+                            }
+                            @{rowCount++;}
+                        </tr>
+                    }
+                </tbody>
+            }
+            else
+            {
+                <tbody>
+                    <tr>
+                        <th scope="row" style="text-align:center" colspan="@(Model.Item1.Columns.Count == 0 ? 1 : Model.Item1.Columns.Count)">No Data Found</th>
+                    </tr>
+                </tbody>
+            }
+        </table>
+    </div>
+}
+@section scripts {
+    <script>
+
+    </script>
+}
+

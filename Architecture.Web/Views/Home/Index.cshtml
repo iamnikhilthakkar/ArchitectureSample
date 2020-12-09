@@ -1,0 +1,137 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to sample architecture of .net core</h1>
+</div>
+
+
+
+<div class="form-group">
+    <div class="row">
+        <div class="col-sm-3">
+            @Html.DropDownList("TableNameList", new SelectList(ViewBag.TableList, "Value", "Text"), new { @class = "form-control" })
+        </div>
+        <div class="col-sm-6">
+            <input type="button" class="btn btn-secondary btn-success" id="displayDataBtn" value="Display" />
+        </div>
+    </div>
+</div>
+
+
+<div class="input-group mb-3 my-2">
+    <div class="custom-file">
+        <input type="file" class="custom-file-input" name="UploadedFile" id="UploadedFile" onChange="validate(this)">
+        <label class="custom-file-label" for="UploadedFile" aria-describedby="inputGroupFileAddon02" id="fileNameLabel">Choose file</label>
+    </div>
+
+
+    <div class="input-group-append">
+        <input type="button" class="input-group-text" id="uploadFileBtn" value="Upload" />
+    </div>
+</div>
+
+<div id="tableData">
+    @Html.Partial("_TableData", new Tuple<System.Data.DataTable, int>(new System.Data.DataTable(), 0))
+</div>
+<div id="noDataToDisplay" style="display:none;">
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row" style="text-align:center">No Data Found</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@section scripts {
+    <script>
+        var getTableDataList = '@Url.Action("GetTableData", "Home")';
+
+        $('#displayDataBtn').on('click', function () {
+            if ($("#TableNameList").val() != 0) {
+                var data = { tableName: $("#TableNameList").val() };
+                $.ajax({
+                    type: "GET",
+                    url: getTableDataList,
+                    data: data,
+                    success: function (response) {
+                        if (response.length == 0)
+                            console.log('Some error occured while uploading');
+                        else {
+                            $('#noDataToDisplay').css("display", "none");
+                            $('#tableData').css("display", "block");
+                            $('#tableData').html(response);
+                        }
+                    },
+                    error: function (e) {
+                        console.log(e);
+                    }
+                });
+            }
+            else {
+                var msg = "Please select Import file name.";
+                toastr.error(msg);
+            }
+        });
+
+
+        $('#uploadFileBtn').on('click', function () {
+            if ($("#TableNameList").val() != 0 && $("#UploadedFile").get(0).files.length != 0) {
+                var fdata = new FormData();
+                var fileUpload = $("#UploadedFile").get(0);
+                var files = fileUpload.files;
+                fdata.append(files[0].name, files[0]);
+                fdata.append("tableName", $("#TableNameList").val());
+                $.ajax({
+                    type: "POST",
+                    url: "/Home/ImportFile",
+                    data: fdata,
+                    contentType: false,
+                    processData: false,
+                    success: function (response) {
+                        if (response.length == 0)
+                            console.log('Some error occured while uploading');
+                        else {
+                            //$('#tableData').html(response);
+                            if (response.status == undefined) {
+                                $('#noDataToDisplay').css("display", "none");
+                                $('#tableData').css("display", "block");
+                                $('#tableData').html(response);
+                                alert("Data uploaded successfully.");
+                            }
+                            else
+                            {
+                                alert("Oops! Something went wrong.");
+                            }
+                        }
+                    },
+                    error: function (e) {
+
+                    }
+                });
+            }
+            else {
+                var msg = "";
+                if ($("#TableNameList").val() == 0) {
+                    msg += "Please select table name.";
+                }
+                if ($("#UploadedFile").get(0).files.length == 0) {
+                    msg += "Please select file.";
+                }
+                alert(msg);
+            }
+        });
+
+        function validate(file) {
+            var FileName = $('#UploadedFile').get(0).files[0].name;
+            $("#fileNameLabel").text(FileName);
+        }
+    </script>
+}

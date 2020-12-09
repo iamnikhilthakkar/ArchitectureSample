@@ -1,0 +1,14 @@
+C:\Projects\My Project\ASP.NET MVC_Architecture Samples\ASP.NET MVC Web Architecture\Architecture.Web\Architecture.Services\bin\Debug\netcoreapp3.1\Architecture.Services.deps.json
+C:\Projects\My Project\ASP.NET MVC_Architecture Samples\ASP.NET MVC Web Architecture\Architecture.Web\Architecture.Services\bin\Debug\netcoreapp3.1\Architecture.Services.dll
+C:\Projects\My Project\ASP.NET MVC_Architecture Samples\ASP.NET MVC Web Architecture\Architecture.Web\Architecture.Services\bin\Debug\netcoreapp3.1\Architecture.Services.pdb
+C:\Projects\My Project\ASP.NET MVC_Architecture Samples\ASP.NET MVC Web Architecture\Architecture.Web\Architecture.Services\bin\Debug\netcoreapp3.1\Architecture.Core.dll
+C:\Projects\My Project\ASP.NET MVC_Architecture Samples\ASP.NET MVC Web Architecture\Architecture.Web\Architecture.Services\bin\Debug\netcoreapp3.1\Architecture.Repositories.dll
+C:\Projects\My Project\ASP.NET MVC_Architecture Samples\ASP.NET MVC Web Architecture\Architecture.Web\Architecture.Services\bin\Debug\netcoreapp3.1\Architecture.Core.pdb
+C:\Projects\My Project\ASP.NET MVC_Architecture Samples\ASP.NET MVC Web Architecture\Architecture.Web\Architecture.Services\bin\Debug\netcoreapp3.1\Architecture.Repositories.pdb
+C:\Projects\My Project\ASP.NET MVC_Architecture Samples\ASP.NET MVC Web Architecture\Architecture.Web\Architecture.Services\obj\Debug\netcoreapp3.1\Architecture.Services.csprojAssemblyReference.cache
+C:\Projects\My Project\ASP.NET MVC_Architecture Samples\ASP.NET MVC Web Architecture\Architecture.Web\Architecture.Services\obj\Debug\netcoreapp3.1\Architecture.Services.AssemblyInfoInputs.cache
+C:\Projects\My Project\ASP.NET MVC_Architecture Samples\ASP.NET MVC Web Architecture\Architecture.Web\Architecture.Services\obj\Debug\netcoreapp3.1\Architecture.Services.AssemblyInfo.cs
+C:\Projects\My Project\ASP.NET MVC_Architecture Samples\ASP.NET MVC Web Architecture\Architecture.Web\Architecture.Services\obj\Debug\netcoreapp3.1\Architecture.Services.csproj.CoreCompileInputs.cache
+C:\Projects\My Project\ASP.NET MVC_Architecture Samples\ASP.NET MVC Web Architecture\Architecture.Web\Architecture.Services\obj\Debug\netcoreapp3.1\Architecture.Services.csproj.CopyComplete
+C:\Projects\My Project\ASP.NET MVC_Architecture Samples\ASP.NET MVC Web Architecture\Architecture.Web\Architecture.Services\obj\Debug\netcoreapp3.1\Architecture.Services.dll
+C:\Projects\My Project\ASP.NET MVC_Architecture Samples\ASP.NET MVC Web Architecture\Architecture.Web\Architecture.Services\obj\Debug\netcoreapp3.1\Architecture.Services.pdb

@@ -1,0 +1,9 @@
+C:\Projects\My Project\ASP.NET MVC_Architecture Samples\ASP.NET MVC Web Architecture\Architecture.Web\Architecture.Core\bin\Debug\netcoreapp3.1\Architecture.Core.deps.json
+C:\Projects\My Project\ASP.NET MVC_Architecture Samples\ASP.NET MVC Web Architecture\Architecture.Web\Architecture.Core\bin\Debug\netcoreapp3.1\Architecture.Core.dll
+C:\Projects\My Project\ASP.NET MVC_Architecture Samples\ASP.NET MVC Web Architecture\Architecture.Web\Architecture.Core\bin\Debug\netcoreapp3.1\Architecture.Core.pdb
+C:\Projects\My Project\ASP.NET MVC_Architecture Samples\ASP.NET MVC Web Architecture\Architecture.Web\Architecture.Core\obj\Debug\netcoreapp3.1\Architecture.Core.csprojAssemblyReference.cache
+C:\Projects\My Project\ASP.NET MVC_Architecture Samples\ASP.NET MVC Web Architecture\Architecture.Web\Architecture.Core\obj\Debug\netcoreapp3.1\Architecture.Core.AssemblyInfoInputs.cache
+C:\Projects\My Project\ASP.NET MVC_Architecture Samples\ASP.NET MVC Web Architecture\Architecture.Web\Architecture.Core\obj\Debug\netcoreapp3.1\Architecture.Core.AssemblyInfo.cs
+C:\Projects\My Project\ASP.NET MVC_Architecture Samples\ASP.NET MVC Web Architecture\Architecture.Web\Architecture.Core\obj\Debug\netcoreapp3.1\Architecture.Core.csproj.CoreCompileInputs.cache
+C:\Projects\My Project\ASP.NET MVC_Architecture Samples\ASP.NET MVC Web Architecture\Architecture.Web\Architecture.Core\obj\Debug\netcoreapp3.1\Architecture.Core.dll
+C:\Projects\My Project\ASP.NET MVC_Architecture Samples\ASP.NET MVC Web Architecture\Architecture.Web\Architecture.Core\obj\Debug\netcoreapp3.1\Architecture.Core.pdb
